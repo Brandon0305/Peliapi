@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.posters{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    position: relative;
+}
+.posters > *{
+    cursor: pointer;
+}
+.posters > div {
+    margin: 20px;
+    transition: ease-in 0.3s;
+}
+.contenedor{
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.year{
+   display: none;
+    position: absolute;
+    color: aliceblue;
+}
+.contenedor:hover{
+    transform: scale(0.9);
+}
+.contenedor:hover >img{
+opacity: 0.4;
+z-index: -1;
+}
+.contenedor:hover> .year{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.Buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: black;
+}
+
+
+ .Buscar > input{
+ height: 25px;
+ width: 450px;
+ justify-content: center;
+ align-items: center;
+ background-color: rgb(243, 236, 236);
+ border-radius: 10px;
+}
+.btnbuscar{
+    height: 27px;
+    width: 80px;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 7px;
+    
+}
+
+
+
+
